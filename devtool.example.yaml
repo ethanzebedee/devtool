@@ -1,0 +1,12 @@
+required_env:
+  - DATABASE_URL
+  - REDIS_URL
+  - SENTRY_DSN
+baseline_path: .devtool-baseline.json
+thresholds:
+  local:
+    max_warn: -1
+    max_fail: -1
+  ci:
+    max_warn: 0
+    max_fail: 0
